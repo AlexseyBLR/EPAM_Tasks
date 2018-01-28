@@ -3,14 +3,13 @@ package by.tc.task01.dao.impl;
 import by.tc.task01.dao.ApplianceDAO;
 import by.tc.task01.dao.DAOException;
 import by.tc.task01.dao.FileParser;
-import by.tc.task01.dao.impl.properties.Property;
+import by.tc.task01.dao.properties.Property;
 import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.criteria.Criteria;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import java.util.Properties;
 
 public abstract class AbstractAppliencTxtDAO implements ApplianceDAO {
 

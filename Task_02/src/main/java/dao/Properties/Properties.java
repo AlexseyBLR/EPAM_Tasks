@@ -1,9 +1,5 @@
-package by.tc.task01.dao.impl.properties;
+package dao.Properties;
 
-import java.io.File;
-
-public final class Property {
-
+public class Properties {
     public static final String path = "src" + File.separator + "main" + File.separator + "resources" + File.separator + "appliances_db.txt";
-
 }
