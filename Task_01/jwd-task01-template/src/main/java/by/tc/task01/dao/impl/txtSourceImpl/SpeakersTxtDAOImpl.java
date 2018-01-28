@@ -14,17 +14,17 @@ public class SpeakersTxtDAOImpl extends AbstractAppliencTxtDAO {
     }
 
     @Override
-    protected Appliance buildAppliance(Map<String, String> appliancMap) {
+    protected Appliance buildAppliance(Map<String, String> applianceMap) {
 
         Speakers speakers = new Speakers();
 
-        speakers.setCordLength(Float.parseFloat(appliancMap.get(SearchCriteria.Speakers.CORD_LENGTH.name())));
+        speakers.setCordLength(Float.parseFloat(applianceMap.get(SearchCriteria.Speakers.CORD_LENGTH.name())));
 
-        speakers.setFrequencyRange(appliancMap.get(SearchCriteria.Speakers.FREQUENCY_RANGE.name()));
+        speakers.setFrequencyRange(applianceMap.get(SearchCriteria.Speakers.FREQUENCY_RANGE.name()));
 
-        speakers.setNumberOfSpeakers(Integer.parseInt(appliancMap.get(SearchCriteria.Speakers.NUMBER_OF_SPEAKERS.name())));
+        speakers.setNumberOfSpeakers(Integer.parseInt(applianceMap.get(SearchCriteria.Speakers.NUMBER_OF_SPEAKERS.name())));
 
-        speakers.setPowerConsumption(Float.parseFloat(appliancMap.get(SearchCriteria.Speakers.POWER_CONSUMPTION.name())));
+        speakers.setPowerConsumption(Float.parseFloat(applianceMap.get(SearchCriteria.Speakers.POWER_CONSUMPTION.name())));
 
         return speakers;
     }

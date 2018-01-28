@@ -16,21 +16,21 @@ public class RefrigeratorTxtDAOImpl extends AbstractAppliencTxtDAO {
 
 
     @Override
-    protected Refrigerator buildAppliance(Map<String, String> appliancMap){
+    protected Refrigerator buildAppliance(Map<String, String> applianceMap){
 
         Refrigerator ref = new Refrigerator();
 
-        ref.setFreezerCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.FREEZER_CAPACITY.name())));
+        ref.setFreezerCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.FREEZER_CAPACITY.name())));
 
-        ref.setHeight(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.HEIGHT.name())));
+        ref.setHeight(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.HEIGHT.name())));
 
-        ref.setOverallCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.OVERALL_CAPACITY.name())));
+        ref.setOverallCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.OVERALL_CAPACITY.name())));
 
-        ref.setPowerConsumption(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.POWER_CONSUMPTION.name())));
+        ref.setPowerConsumption(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.POWER_CONSUMPTION.name())));
 
-        ref.setWeight(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.WEIGHT.name())));
+        ref.setWeight(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.WEIGHT.name())));
 
-        ref.setWidth(Float.parseFloat(appliancMap.get(SearchCriteria.Refrigerator.WIDTH.name())));
+        ref.setWidth(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.WIDTH.name())));
 
         return ref;
     }

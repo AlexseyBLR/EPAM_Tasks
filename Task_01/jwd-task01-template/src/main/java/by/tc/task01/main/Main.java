@@ -60,20 +60,8 @@ public class Main {
 
 		PrintApplianceInfo.print(appliance);
 
-
-		Criteria<Speakers> criteriaSpeaker = new Criteria<Speakers>();
-		criteriaSpeaker.add(Speakers.NUMBER_OF_SPEAKERS , 2);
-		criteriaSpeaker.add(Speakers.FREQUENCY_RANGE,  "2-4");
-
-		appliance = service.find(criteriaSpeaker);
-
-		PrintApplianceInfo.print(appliance);
-
-
-
 		//////////////////////////////////////////////////////////////////
 
-		
 		Criteria<TabletPC> criteriaTabletPC = new Criteria<TabletPC>();
 		criteriaTabletPC.add(TabletPC.COLOR, "green");
 		criteriaTabletPC.add(TabletPC.DISPLAY_INCHES, 16);
@@ -83,23 +71,14 @@ public class Main {
 
 		PrintApplianceInfo.print(appliance);
 
-
-
 		//////////////////////////////////////////////////////////////////
 		Criteria<SearchCriteria.VacuumCleaner> criteriaVacuum = new Criteria<SearchCriteria.VacuumCleaner>();
 		criteriaVacuum.add(SearchCriteria.VacuumCleaner.FILTER_TYPE , "A");
 		criteriaVacuum.add(SearchCriteria.VacuumCleaner.BAG_TYPE , "XXX");
 
-
 		appliance = service.find(criteriaVacuum);
 
 		PrintApplianceInfo.print(appliance);
-
-
-
-
-
-
 
 
 	}

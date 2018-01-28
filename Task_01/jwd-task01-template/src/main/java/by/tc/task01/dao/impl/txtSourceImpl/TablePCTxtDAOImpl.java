@@ -14,19 +14,19 @@ public class TablePCTxtDAOImpl extends AbstractAppliencTxtDAO {
     }
 
     @Override
-    protected Appliance buildAppliance(Map<String, String> appliancMap) {
+    protected Appliance buildAppliance(Map<String, String> applianceMap) {
 
         TabletPC tabletPC = new TabletPC();
 
-        tabletPC.setBatteryCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.TabletPC.BATTERY_CAPACITY.name())));
+        tabletPC.setBatteryCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.TabletPC.BATTERY_CAPACITY.name())));
 
-        tabletPC.setColor(appliancMap.get(SearchCriteria.TabletPC.COLOR.name()));
+        tabletPC.setColor(applianceMap.get(SearchCriteria.TabletPC.COLOR.name()));
 
-        tabletPC.setDisplayInchs(Float.parseFloat(appliancMap.get(SearchCriteria.TabletPC.DISPLAY_INCHES.name())));
+        tabletPC.setDisplayInchs(Float.parseFloat(applianceMap.get(SearchCriteria.TabletPC.DISPLAY_INCHES.name())));
 
-        tabletPC.setFlashMemoryCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.TabletPC.FLASH_MEMORY_CAPACITY.name())));
+        tabletPC.setFlashMemoryCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.TabletPC.FLASH_MEMORY_CAPACITY.name())));
 
-        tabletPC.setMemoryRom(Float.parseFloat(appliancMap.get(SearchCriteria.TabletPC.MEMORY_ROM.name())));
+        tabletPC.setMemoryRom(Float.parseFloat(applianceMap.get(SearchCriteria.TabletPC.MEMORY_ROM.name())));
 
         return tabletPC;
     }

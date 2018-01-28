@@ -16,21 +16,21 @@ public class OvenTxtDAOImpl extends AbstractAppliencTxtDAO {
 
 
     @Override
-    protected Oven buildAppliance( Map<String, String> appliancMap){
+    protected Oven buildAppliance( Map<String, String> applianceMap){
 
         Oven oven = new Oven();
 
-        oven.setCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.CAPACITY.name())));
+        oven.setCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.CAPACITY.name())));
 
-        oven.setDepth(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.DEPTH.name())));
+        oven.setDepth(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.DEPTH.name())));
 
-        oven.setHeight(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.HEIGHT.name())));
+        oven.setHeight(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.HEIGHT.name())));
 
-        oven.setPowerConsumption(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.POWER_CONSUMPTION.name())));
+        oven.setPowerConsumption(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.POWER_CONSUMPTION.name())));
 
-        oven.setWeight(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.WEIGHT.name())));
+        oven.setWeight(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.WEIGHT.name())));
 
-        oven.setWidth(Float.parseFloat(appliancMap.get(SearchCriteria.Oven.WIDTH.name())));
+        oven.setWidth(Float.parseFloat(applianceMap.get(SearchCriteria.Oven.WIDTH.name())));
 
         return oven;
     }

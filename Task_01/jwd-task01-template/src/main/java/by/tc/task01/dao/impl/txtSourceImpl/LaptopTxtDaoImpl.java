@@ -18,21 +18,21 @@ public class LaptopTxtDaoImpl extends AbstractAppliencTxtDAO {
 
 
     @Override
-    protected Laptop buildAppliance(Map<String, String> appliancMap){
+    protected Laptop buildAppliance(Map<String, String> applianceMap){
 
         Laptop laptop = new Laptop();
 
-        laptop.setBatteryCapacity(Float.parseFloat(appliancMap.get(SearchCriteria.Laptop.BATTERY_CAPACITY.name())));
+        laptop.setBatteryCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Laptop.BATTERY_CAPACITY.name())));
 
-        laptop.setCpu(Float.parseFloat(appliancMap.get(SearchCriteria.Laptop.CPU.name())));
+        laptop.setCpu(Float.parseFloat(applianceMap.get(SearchCriteria.Laptop.CPU.name())));
 
-        laptop.setDisplayInchs(Float.parseFloat(appliancMap.get(SearchCriteria.Laptop.DISPLAY_INCHS.name())));
+        laptop.setDisplayInchs(Float.parseFloat(applianceMap.get(SearchCriteria.Laptop.DISPLAY_INCHS.name())));
 
-        laptop.setMemoryRom(Float.parseFloat(appliancMap.get(SearchCriteria.Laptop.MEMORY_ROM.name())));
+        laptop.setMemoryRom(Float.parseFloat(applianceMap.get(SearchCriteria.Laptop.MEMORY_ROM.name())));
 
-        laptop.setOs(appliancMap.get(SearchCriteria.Laptop.OS.name()));
+        laptop.setOs(applianceMap.get(SearchCriteria.Laptop.OS.name()));
 
-        laptop.setSystemMemory(Float.parseFloat(appliancMap.get(SearchCriteria.Laptop.SYSTEM_MEMORY.name())));
+        laptop.setSystemMemory(Float.parseFloat(applianceMap.get(SearchCriteria.Laptop.SYSTEM_MEMORY.name())));
 
         return laptop;
     }
