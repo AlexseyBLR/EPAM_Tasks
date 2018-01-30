@@ -10,7 +10,7 @@ import static by.tc.task01.service.validation.Validator.criteriaValidator;
 
 public class ApplianceServiceImpl implements ApplianceService{
 
-	private ApplianceDAO applianceDAO;
+	private ApplianceDAO applianceDAO;	
 
 
 	@Override
