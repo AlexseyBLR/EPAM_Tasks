@@ -18,7 +18,9 @@ public class ApplianceServiceImpl implements ApplianceService{
 		boolean valid = criteriaValidator(criteria);
 		Appliance appliance = null;
 		if (valid) {
-			applianceDAO = new ApplianceDAOImpl();
+			applianceDAO = new ApplianceDAOImpl();// опять содаешь объект
+			// ты проект после прошлого курса смотрел
+			// в этот же раз объяснялось опять, почему мы не пложим объекты!
 			appliance = applianceDAO.find(criteria);
 		}
 		return appliance;
