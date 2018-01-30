@@ -9,7 +9,8 @@ public class RefrigeratorDaoCommand implements Command {
 
    private Criteria criteria;
 
-    public RefrigeratorDaoCommand(Criteria criteria) {
+    public RefrigeratorDaoCommand(Criteria criteria) {// передача сюда критериев как параметров заставляет тебя создавать новый объект, что нецелесообразно
+       // а в твоей реализации ты создаешь аж целую группу объектов, из которой нужен только один
         this.criteria = criteria;
     }
 
