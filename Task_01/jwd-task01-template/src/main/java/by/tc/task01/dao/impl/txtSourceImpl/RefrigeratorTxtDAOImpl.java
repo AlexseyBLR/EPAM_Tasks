@@ -20,7 +20,7 @@ public class RefrigeratorTxtDAOImpl extends AbstractAppliencTxtDAO {
 
         Refrigerator ref = new Refrigerator();
 
-        ref.setFreezerCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.FREEZER_CAPACITY.name())));
+        ref.setFreezerCapacity(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.FREEZER_CAPACITY.name())));// слишком длинные методы
 
         ref.setHeight(Float.parseFloat(applianceMap.get(SearchCriteria.Refrigerator.HEIGHT.name())));
 
