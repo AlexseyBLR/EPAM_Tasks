@@ -38,9 +38,9 @@ public Map<String , String> getApplianceMap(String appType) throws Exception {
                 }
             }
         }
-    }catch (IOException e){
+    }catch (IOException e){// для второй сдачи проекта мог бы уже вылизать код
         throw e;
-    }catch (Exception e){
+    }catch (Exception e){// и не перехватывать Exception - ты то эту тему уже слушал
         throw e;
     }
     return appMap;
@@ -72,7 +72,7 @@ private boolean lookingByCriterians(List<String> criteriansList , String resultL
     return criteriansList.size() == count;
 }
 
-private String[] getSortedLineArr(String line){
+private String[] getSortedLineArr(String line){// излишняя инфа в имени метода, что надо получить понятно из возвращаемого типа
 
     String[] lineArr = line.split(" ");
     String[] applProperiesArr = new String[lineArr.length - 2];
@@ -99,7 +99,7 @@ private Map<String , String> constructMap(String[] sortedList){
 
 
 
-
+// пустота
 
 
 

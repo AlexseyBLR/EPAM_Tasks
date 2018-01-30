@@ -14,7 +14,8 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 
 		String applianceType = criteria.getApplianceType();
 
-		DaoDirector daoDirector = new DaoDirector(criteria);
+		DaoDirector daoDirector = new DaoDirector(criteria);// уже несколько раз объяснялось, что вы должны следить за количеством создаваемых объектов
+		// ты в класс DaoDirector загляни, это сколько лишних объектов ты насоздаешь?
 
 		return daoDirector.find(applianceType);
 	}
