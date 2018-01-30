@@ -23,7 +23,8 @@ public class ApplianceServiceImpl implements ApplianceService{
 			// в этот же раз объяснялось опять, почему мы не пложим объекты!
 			appliance = applianceDAO.find(criteria);
 		}
-		return appliance;
+		return appliance;// почему мы возвращаем Null, если данные невалидны???
+		// ты же в дао более-менее успешно уже исключениями оперировал
 	}
 
 
